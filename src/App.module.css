@@ -21,6 +21,7 @@
     opacity: 0;
     transform: translateY(14px);
   }
+
   to {
     opacity: 1;
     transform: none;
@@ -32,6 +33,7 @@
     grid-template-columns: 1fr;
     gap: 0;
   }
+
   .main {
     padding-top: 32px;
     gap: 64px;

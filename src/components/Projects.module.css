@@ -28,7 +28,9 @@
   box-shadow: 0 12px 28px -18px rgba(22, 33, 58, 0.38);
 }
 
-.featured { padding: 26px 28px 24px; }
+.featured {
+  padding: 26px 28px 24px;
+}
 
 .head {
   display: flex;
@@ -42,7 +44,9 @@
   font-weight: 800;
 }
 
-.featured .name { font-size: 22px; }
+.featured .name {
+  font-size: 22px;
+}
 
 .tagline {
   margin-top: 2px;
@@ -90,17 +94,25 @@
   font-size: 14.5px;
 }
 
-.points li::marker { color: var(--accent); }
+.points li::marker {
+  color: var(--accent);
+}
 
-.grid .points { font-size: 14px; }
+.grid .points {
+  font-size: 14px;
+}
 
 .grid .head {
   flex-direction: column;
   gap: 10px;
 }
 
-.grid .company { align-self: flex-start; }
+.grid .company {
+  align-self: flex-start;
+}
 
 @media (max-width: 900px) {
-  .grid { grid-template-columns: 1fr; }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }

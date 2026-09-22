@@ -17,8 +17,15 @@
 }
 
 @keyframes enter {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: none; }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .avatar {
@@ -143,7 +150,16 @@
     height: auto;
     padding: 40px 0 0;
   }
-  .inner { gap: 24px; }
-  .nav { display: none; }
-  .links { margin-top: 0; }
+
+  .inner {
+    gap: 24px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .links {
+    margin-top: 0;
+  }
 }

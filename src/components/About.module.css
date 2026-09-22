@@ -46,5 +46,7 @@
 }
 
 @media (max-width: 640px) {
-  .highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

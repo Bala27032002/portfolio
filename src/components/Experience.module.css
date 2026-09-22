@@ -86,7 +86,9 @@
   color: var(--muted);
 }
 
-.dot { margin: 0 4px; }
+.dot {
+  margin: 0 4px;
+}
 
 .points {
   margin: 16px 0 18px;
@@ -98,15 +100,22 @@
   font-size: 15px;
 }
 
-.points li::marker { color: var(--accent); }
+.points li::marker {
+  color: var(--accent);
+}
 
 @media (max-width: 720px) {
+
   .timeline::before,
-  .item::before { display: none; }
+  .item::before {
+    display: none;
+  }
+
   .item {
     grid-template-columns: 1fr;
     gap: 10px;
   }
+
   .when {
     flex-direction: row;
     align-items: center;
