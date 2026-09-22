@@ -66,6 +66,13 @@
   border-radius: var(--radius);
   padding: 22px 24px 20px;
   box-shadow: var(--shadow);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 28px -18px rgba(22, 33, 58, 0.38);
 }
 
 .role {
