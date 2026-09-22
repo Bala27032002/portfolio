@@ -1,0 +1,27 @@
+.shell {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+  max-width: calc(var(--sidebar-w) + var(--content-w) + var(--gutter) * 3);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  gap: var(--gutter);
+}
+
+.main {
+  min-width: 0;
+  padding: 72px 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+
+@media (max-width: 960px) {
+  .shell {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .main {
+    padding-top: 32px;
+    gap: 64px;
+  }
+}

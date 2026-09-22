@@ -1,0 +1,76 @@
+export const projects = [
+  {
+    name: "MyBabyWish",
+    tagline: "Fertility, pregnancy & wellness coaching platform",
+    company: "Applaunch",
+    surfaces: "Consumer app + admin CMS API",
+    stack: ["Node.js", "Express.js", "MongoDB / Mongoose", "Socket.IO", "Agora", "Stripe"],
+    points: [
+      "Layered architecture (controllers → use cases → entities → models) with separate app and admin API surfaces; JWT/Passport auth, Google OAuth, OTP verification and refresh tokens.",
+      "Stripe subscriptions and Apple/Google IAP receipt validation with subscription coupons and purchase-history sync.",
+      "Expert/coach booking (availability scheduling, payouts), Agora 1:1 video/audio calls with call history and reconnect handling, Socket.IO real-time chat.",
+      "Content library (courses, podcasts, videos with progress tracking), community feed, fertility/health trackers and provider directories; Firebase/APN push, SES email, i18n, node-cron jobs, Puppeteer PDF reports, FFmpeg/Sharp media processing.",
+    ],
+  },
+  {
+    name: "Firebird",
+    tagline: "Social matchmaking & events platform",
+    company: "Applaunch",
+    surfaces: "Consumer app, partner portal, super-admin back office",
+    stack: ["NestJS 11", "TypeScript", "MongoDB", "Redis", "Socket.IO", "AWS"],
+    metric: "10K+ daily match queries",
+    points: [
+      "Email/phone OTP signup (SNS + SES) with JWT refresh rotation and separate auth stacks for consumers, partners and admins — Passport JWT, argon2 and Firebase social login (Google/Apple/Facebook).",
+      "Live matchmaking engine over a WebSocket gateway processing 10K+ daily match queries — Redis-backed pool management, mutual match detection, host actions and event lifecycle automation.",
+      "Apple StoreKit2 and Google Play server-side JWS/receipt verification with webhook-driven entitlement sync — no third-party billing SDK.",
+      "Events with in-event live chat, friend requests, venue discovery with Redis presence tracking, geolocation map feed, QR deep-link friend-add flow (iOS/Android app links), partner onboarding & discount management, cron jobs for event archival and pool eviction.",
+    ],
+  },
+  {
+    name: "True2Faces",
+    tagline: "Dating & matchmaking platform",
+    company: "Applaunch",
+    surfaces: "Consumer app, studio-owner portal, admin back office",
+    stack: ["NestJS 11", "TypeScript", "MongoDB", "Redis", "Socket.io", "Stripe", "AWS S3 / SES"],
+    points: [
+      "Multi-step onboarding questionnaire (~70 option categories) with EN/DE localization and idempotent seed scripts.",
+      "Custom weighted compatibility-scoring engine — category weights, bidirectional scoring, hard/soft filters and age-adjacency rules for the Discover/Matching module.",
+      "Socket.io chat with presence tracking, auto-archive and report/block moderation; 24h ephemeral Stories via S3 presigned uploads.",
+      "Stripe PaymentIntents with idempotent webhooks and refunds; 12-month photoshoot renewal lifecycle with cron-driven escalation.",
+      "Date-invite calendar, events, community forum, studio-owner portal (separate auth, booking & media upload), legal consent tracking, Throttler rate limiting and API-key middleware.",
+    ],
+  },
+  {
+    name: "Summon.fun",
+    tagline: "Blockchain trading app",
+    company: "Orign3 Systems",
+    surfaces: "Backend",
+    stack: ["Node.js", "WebSockets", "Sui", "Solana"],
+    points: [
+      "Smart-contract API integration on Sui and Solana.",
+      "Real-time WebSocket feeds and a referral reward system.",
+    ],
+  },
+  {
+    name: "HRMS platform",
+    tagline: "Employee, attendance, leave & payroll management",
+    company: "Ardhas Technology",
+    surfaces: "Web app + admin dashboards",
+    stack: ["Node.js", "React.js", "MySQL", "Razorpay", "Nodemailer"],
+    points: [
+      "RBAC with JWT for Admin, HR and Employee tiers.",
+      "Razorpay payments, SMTP notifications, document management and PDF reporting.",
+    ],
+  },
+  {
+    name: "Applicant Tracking System",
+    tagline: "Recruitment pipeline for admins and recruiters",
+    company: "Montbleu Technologies",
+    surfaces: "Web app",
+    stack: ["Node.js", "Express.js", "React.js", "JWT"],
+    points: [
+      "Candidate pipeline, application status tracking and recruiter assignment.",
+      "Role-based dashboards and automated candidate/recruiter email flows.",
+    ],
+  },
+];

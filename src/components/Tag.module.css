@@ -1,0 +1,19 @@
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  white-space: nowrap;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
