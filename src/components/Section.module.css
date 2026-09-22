@@ -31,4 +31,5 @@
   margin-top: 12px;
   color: var(--ink-2);
   max-width: 62ch;
+  text-align: justify;
 }

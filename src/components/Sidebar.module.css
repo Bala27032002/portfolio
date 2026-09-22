@@ -70,6 +70,7 @@
   color: var(--ink-2);
   font-size: 15px;
   max-width: 34ch;
+  text-align: justify;
 }
 
 .nav ul {

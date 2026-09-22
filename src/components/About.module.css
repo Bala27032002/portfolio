@@ -4,6 +4,7 @@
   gap: 14px;
   color: var(--ink-2);
   max-width: 66ch;
+  text-align: justify;
 }
 
 .copy p:first-child {
